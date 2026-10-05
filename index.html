@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szegedi kirándulás</title>
+</head>
+<body>
+    <h1>Osztálykirándulás</h1>
+    <h2>Bevezetés</h2>
+    <p> 2026. október 16-án, pénteken az osztály egynapos kirándulásra indul <strong>Szegedre.</strong>
+        A gyülekező 6:30-kor az iskola udvarán lesz, az autóbusz pedig 6:45-kor indul. 
+        Hazaérkezésünk várhatóan 18:00 körül lesz.</p>
+        <a href="#urlap">Jelentkezési űrlap</a>
+    <h2>Fontosabb információk</h2>
+    <p>A kirándulás programja, a szükséges felszerelés és a részvételi díj az oldalon
+        található. <br> Kérjük, hogy mindenki időben érkezzen,  és hozza magával a programhoz 
+        szükséges holmikat. <br>
+        A kirándulás kísérő tanára <i>Kovács Anna</i>. Kérdés esetén az alábbi e-mail-címen lehet
+        vele kapcsolatba
+        lépni:
+    <a href="mailto:anna.kovacs@iskola.hu">anna.kovacs@iskola.hu.</a> <br>
+    <a href="https://hu.wikipedia.org/wiki/Szeged"><i>Szegedi wikipedia</i></a>
+    <p>
+        <blockquote><i>Csak a pozitivitás</i> - KriszhAdvice</blockquote>
+    </p>
+
+    <h2>Programok</h2>
+    <ul>
+        <ol>
+            <li>Utazás Szegedre</li>
+            <li>Dóm tér és a Fogadalmi templom</li>
+            <li>Móra Ferenc Múzeum</li>
+                <ul>
+                    <li>állandó kiállítás</li>
+                    <li>időszaki kiállítás</li>
+                </ul>
+            <li>Ebéd a belvárosban</li>
+            <li>Hazautazás</li>
+        </ol>
+    </ul>
+
+    <h2>Hoznivalók</h2>
+    <ul>
+            <li>Személyi igazolvány</li>
+            <li>innivaló</li>
+            <li>Esőkabát</li>
+            <li>Kényelmes cipő</li>
+    </ul>
+
+    <h2>Tudnivalók</h2>
+    <ul>
+        <li>Gyülekező: 6:30</li>
+        <li>Indulás: 6:45</li>
+        <a href="mailto:anna.kovacs@iskola.hu."><li>Kisérő tanár: Kovács Anna</li></a>
+    </ul>
+
+    <img src="szeged.png" alt="Kép Szegedről">
+
+    <h3>7. Költségek táblázatban</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tétel</th>
+                <th>Ár</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Utazás</td>
+                <td>2500 Ft</td>
+            </tr>
+            <tr>
+                <td>Belépő</td>
+                <td>1800 Ft</td>
+            </tr>
+            <tr>
+                <td>Ebéd</td>
+                <td>2200 Ft</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Összesen: 6500 Ft</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <form action="https://httpbin.org/post" method="post">
+    <h2>Jelentkezési űrlap</h2>
+            
+            
+            <fieldset>
+                <legend>Személyes adatok</legend>
+                <p>
+                    <label for="nev">Név *</label><br>
+                    <input type="text" id="nev" name="nev" 
+                    placeholder="Kovács Anna" required>
+                </p>
+                <p>
+                    <label for="email">Email *</label><br>
+                    <input type="email" id="email" name="email" 
+                    placeholder="example@gmail.com" required>
+                </p>
+                <p>
+                    <label for="tel">Telefon </label><br>
+                    <input type="tel" id="tel" name="telefon" placeholder="+36 30 123 4567">
+                </p>
+                <p>
+                    <label for="fo">Hány fővel jössz</label><br>
+                    <input type="number" id="fo" name="fo" min="1" max="4"
+                    placeholder="1-4" required>
+                </p>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Milyen buszra ülsz?</legend>
+            
+                <p><strong>Méret:</strong></p>
+                <p>
+                    <input type="radio" id="m1" name="meret" value="26" checked>
+                    <label for="m1">26 cm</label>
+                    <input type="radio" id="m2" name="meret" value="32">
+                    <label for="m2">32 cm</label>
+                </p>
+            
+                <p><strong>Extra feltét:</strong></p>
+                <p>
+                    <input type="checkbox" id="f1" name="extra" value="sajt">
+                    <label for="f1">Extra sajt</label>
+                    <input type="checkbox" id="f2" name="extra" value="gomba">
+                    <label for="f2">Gomba</label>
+                </p>
+            
+                <p>
+                    <label for="db">Darab *</label>
+                    <input type="number" id="db" name="darab" value="1" min="1" max="10" required>
+                </p>
+            </fieldset>
+            
+            <p>
+                <label for="megj">Megjegyzés</label><br>
+                <textarea id="megj" name="megjegyzes" rows="3" cols="34"></textarea>
+            </p>
+            
+            <p>
+                <input type="checkbox" id="aszf" name="aszf" value="elfogadva" required>
+                <label for="aszf">Elfogadom a feltételeket *</label>
+            </p>
+            
+            <button type="submit">Megrendelem</button>
+    </form>
+
+
+
+
+</body>
+</html>
