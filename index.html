@@ -86,9 +86,9 @@
             </tr>
         </tfoot>
     </table>
-
+<section id="urlap">
     <form action="https://httpbin.org/post" method="post">
-    <h2>Jelentkezési űrlap</h2>
+    <h2>Jelentkezési űrlap</h2 >
             
             
             <fieldset>
@@ -115,43 +115,44 @@
             </fieldset>
             
             <fieldset>
-                <legend>Milyen buszra ülsz?</legend>
+                <legend></legend>
             
-                <p><strong>Méret:</strong></p>
+                <p><strong>Milyen buszra ülsz?</strong></p>
                 <p>
                     <input type="radio" id="m1" name="meret" value="26" checked>
-                    <label for="m1">26 cm</label>
+                    <label for="m1">Kicsi</label>
                     <input type="radio" id="m2" name="meret" value="32">
-                    <label for="m2">32 cm</label>
+                    <label for="m2">Nagy</label>
                 </p>
             
-                <p><strong>Extra feltét:</strong></p>
+                 <legend>Étkezés</legend>
                 <p>
-                    <input type="checkbox" id="f1" name="extra" value="sajt">
-                    <label for="f1">Extra sajt</label>
-                    <input type="checkbox" id="f2" name="extra" value="gomba">
-                    <label for="f2">Gomba</label>
+                <label for="fajta">Fajták: </label>
+                <select id="fajta" name="fajta" required>
+                    <option value="">-- válassz --</option>
+                    <option value="margherita">Húsos menü</option>
+                    <option value="sonkas">Hozok magamnak ételt</option>
+                    <option value="negysajtos">Vegetáriánus menü</option>
+                </select>
                 </p>
-            
-                <p>
-                    <label for="db">Darab *</label>
-                    <input type="number" id="db" name="darab" value="1" min="1" max="10" required>
-                </p>
-            </fieldset>
-            
-            <p>
-                <label for="megj">Megjegyzés</label><br>
-                <textarea id="megj" name="megjegyzes" rows="3" cols="34"></textarea>
-            </p>
-            
-            <p>
-                <input type="checkbox" id="aszf" name="aszf" value="elfogadva" required>
-                <label for="aszf">Elfogadom a feltételeket *</label>
-            </p>
-            
-            <button type="submit">Megrendelem</button>
-    </form>
 
+                  <p><strong>Extrák</strong></p>
+                <p>
+                    <input type="checkbox" id="m1" name="meret" value="26" checked>
+                    <label for="m1">Sétahajózás a Tiszán</label>
+                    <input type="checkbox" id="m2" name="meret" value="32">
+                    <label for="m2">várlátogatá</label>
+                </p>
+            
+                <p>
+                    <label for="megj">Megjegyzés</label><br>
+                    <textarea id="megj" name="megjegyzes" rows="3" cols="34"></textarea>
+                </p>
+            
+            
+                <button type="submit">Jelentkezem!</button>
+    </form>
+</section>
 
 
 
